@@ -1,0 +1,22 @@
+@import './base/_reset';
+@import './utils/hidden';
+@import './utils/vars';
+@import './base/general';
+// ----------------------------------------------------
+@import './components/modal';
+// ----------------------------------------------------
+// Index
+@import './layouts/common/header';
+@import './components/mobile-menu';
+
+@import './layouts/index/hero';
+@import './layouts/index/advantages';
+@import './layouts/index/examples';
+@import './layouts/index/team';
+@import './layouts/index/customers';
+
+@import './layouts/common/footer';
+// ----------------------------------------------------
+// Portfolio
+@import './components/filter';
+@import './layouts/portfolio/works';

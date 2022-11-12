@@ -1,0 +1,38 @@
+.examples-list {
+  display: flex;
+  gap: 30px;
+}
+
+.examples {
+  display: none;
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
+}
+
+.examples-list__thumb {
+  position: relative;
+}
+
+.examples-list__text-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(47, 48, 58, 0.8);
+}
+
+.examples-list__text {
+  font-weight: 700;
+  line-height: 1.14px;
+  text-transform: uppercase;
+
+  color: var(--white-color);
+}
