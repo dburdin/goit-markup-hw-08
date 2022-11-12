@@ -119,6 +119,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
+  padding: 94px 15px;
   height: 100%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.2);
@@ -135,16 +136,27 @@ body {
 }
 
 .modal {
-  position: absolute;
+  position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   padding: 40px;
-  min-height: 581px;
-  min-width: 528px;
   border-radius: 4px;
   background-color: var(--white-color);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) {
+  .modal {
+    position: absolute;
+    max-width: 609px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    max-height: 581px;
+    max-width: 528px;
+    transform: translate(-50%, -50%) scale(1);
+  }
 }
 
 .modal-button {
@@ -462,7 +474,6 @@ body {
   width: 100vw;
   height: 100vh;
   z-index: 1;
-  outline: tomato solid 1px;
   background-color: var(--white-color);
   opacity: 1;
   visibility: visible;
@@ -580,7 +591,7 @@ body {
 
 .menu-social-list {
   display: flex;
-  gap: 20px;
+  gap: 24px;
 }
 .menu-social-list .link {
   font-family: "Roboto";
@@ -591,13 +602,20 @@ body {
   color: var(--accent-color);
   letter-spacing: 0.02em;
 }
-.menu-social-list .menu-social-item:not(:last-child)::after {
-  content: "";
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  width: 1px;
-  background-color: rgba(33, 33, 33, 0.2);
-  transform: rotate(90deg);
-  margin-left: 10px;
+@media screen and (min-width: 480px) {
+  .menu-social-list .menu-social-item:not(:last-child)::after {
+    content: "";
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    width: 1px;
+    background-color: rgba(33, 33, 33, 0.2);
+    transform: rotate(90deg);
+    margin-left: 10px;
+  }
+}
+@media screen and (max-width: 479px) {
+  .menu-social-list {
+    flex-wrap: wrap;
+  }
 }
 
 .hero-banner {
