@@ -88,8 +88,10 @@ body {
   }
 }
 
-.section-null {
-  padding-bottom: 0px;
+@media screen and (min-width: 1200px) {
+  .section-null {
+    padding-bottom: 0px;
+  }
 }
 
 .container {
@@ -368,6 +370,7 @@ body {
   align-items: center;
   gap: 10px;
   color: var(--secondary-color);
+  font-size: 12px;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -383,6 +386,11 @@ body {
   .header-contacts .link {
     display: flex;
     padding: 5px 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header-contacts .link {
+    font-size: 14px;
   }
 }
 .header-contacts .header-contacts-icon {
@@ -734,6 +742,11 @@ body {
   line-height: 1.14;
   text-transform: uppercase;
 }
+@media screen and (min-width: 768px) {
+  .advantages-title {
+    justify-content: flex-start;
+  }
+}
 
 .advantages-subtitle {
   min-width: 270px;
@@ -887,7 +900,7 @@ body {
 }
 
 .customers-list__link {
-  max-height: 92px;
+  height: 92px;
   display: flex;
   justify-content: center;
   align-items: center;

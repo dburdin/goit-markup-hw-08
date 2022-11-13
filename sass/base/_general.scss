@@ -45,7 +45,9 @@ body {
 }
 
 .section-null {
-  padding-bottom: 0px;
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 0px;
+  }
 }
 
 .container {
